@@ -228,19 +228,19 @@ export const categoriesList = [
     level: 0,
     num: 1993,
     children: [{
-      id: 4,
+      id: 2,
       name: 'O型密封',
       level: 1,
       num: 2033,
       children: [
         {
-          id: 9,
+          id: 3,
           name: '耐磨衬套',
           level: 2,
           num: 23,
         },
         {
-          id: 10,
+          id: 4,
           name: '类目编辑测试',
           level: 2,
           num: 243,
@@ -248,190 +248,190 @@ export const categoriesList = [
     }]
   },
   {
-    id: 2,
+    id: 5,
     name: '一级 2',
     level: 0,
     num: 2033,
     children: [
       {
-        id: 5,
+        id: 6,
         name: '二级 2-1',
         level: 1,
         num: 2033,
       },
       {
-        id: 6,
+        id: 7,
         name: '二级 2-2',
         level: 1,
         num: 2033,
       }]
   },
   {
-    id: 3,
+    id: 8,
     name: '一级 3',
     level: 0,
     num: 2033,
     children: [
       {
-        id: 7,
+        id: 9,
         name: '二级 3-1',
         level: 1,
         num: 2033,
       },
       {
-        id: 8,
+        id: 10,
         name: '二级 3-2',
         level: 1,
         num: 2033,
       }]
   },
   {
-    id: 2,
+    id: 11,
     name: '一级 2',
     level: 0,
     num: 2033,
     children: [
       {
-        id: 5,
+        id: 12,
         name: '二级 2-1',
         level: 1,
         num: 2033,
       },
       {
-        id: 6,
+        id: 13,
         name: '二级 2-2',
         level: 1,
         num: 2033,
       }]
   },
   {
-    id: 2,
+    id: 14,
     name: '一级 2',
     level: 0,
     num: 2033,
     children: [
       {
-        id: 5,
+        id: 15,
         name: '二级 2-1',
         level: 1,
         num: 2033,
       },
       {
-        id: 6,
+        id: 16,
         name: '二级 2-2',
         level: 1,
         num: 2033,
       }]
   },
   {
-    id: 2,
+    id: 17,
     name: '一级 2',
     level: 0,
     num: 2033,
     children: [
       {
-        id: 5,
+        id: 18,
         name: '二级 2-1',
         level: 1,
         num: 2033,
       },
       {
-        id: 6,
+        id: 19,
         name: '二级 2-2',
         level: 1,
         num: 2033,
       }]
   },
   {
-    id: 2,
+    id: 20,
     name: '一级 2',
     level: 0,
     num: 2033,
     children: [
       {
-        id: 5,
+        id: 21,
         name: '二级 2-1',
         level: 1,
         num: 2033,
       },
       {
-        id: 6,
+        id: 22,
         name: '二级 2-2',
         level: 1,
         num: 2033,
       }]
   },
   {
-    id: 2,
+    id: 23,
     name: '一级 2',
     level: 0,
     num: 2033,
     children: [
       {
-        id: 5,
+        id: 24,
         name: '二级 2-1',
         level: 1,
         num: 2033,
       },
       {
-        id: 6,
+        id: 25,
         name: '二级 2-2',
         level: 1,
         num: 2033,
       }]
   },
   {
-    id: 2,
+    id: 26,
     name: '一级 2',
     level: 0,
     num: 2033,
     children: [
       {
-        id: 5,
+        id: 27,
         name: '二级 2-1',
         level: 1,
         num: 2033,
       },
       {
-        id: 6,
+        id: 28,
         name: '二级 2-2',
         level: 1,
         num: 2033,
       }]
   },
   {
-    id: 2,
+    id: 29,
     name: '一级 2',
     level: 0,
     num: 2033,
     children: [
       {
-        id: 5,
+        id: 30,
         name: '二级 2-1',
         level: 1,
         num: 2033,
       },
       {
-        id: 6,
+        id: 31,
         name: '二级 2-2',
         level: 1,
         num: 2033,
       }]
   },
   {
-    id: 2,
+    id: 765,
     name: '一级 2',
     level: 0,
     num: 2033,
     children: [
       {
-        id: 5,
+        id: 32,
         name: '二级 2-1',
         level: 1,
         num: 2033,
       },
       {
-        id: 6,
+        id: 33,
         name: '二级 2-2',
         level: 1,
         num: 2033,

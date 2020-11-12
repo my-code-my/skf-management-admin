@@ -1,23 +1,50 @@
 <template>
   <div>
     <el-card>
-      <tree-table :data="categoriesList"
-                  :columns="columns"
-                  border
-                  :selection-type="false"
-                  :expand-type="true">
+<!--      <tree-table :data="categoriesList"-->
+<!--                  :columns="columns"-->
+<!--                  border-->
+<!--                  :selection-type="false"-->
+<!--                  :expand-type="true">-->
 
-        <template slot="level" slot-scope="scope">
-          <el-tag v-if="scope.row.level === 0">一级</el-tag>
-          <el-tag v-else-if="scope.row.level === 1">二级</el-tag>
-          <el-tag v-else>三级</el-tag>
-        </template>
-        <template slot="opt" slot-scope="scope">
-          <el-button type="text" @click="newLevel(scope.row.id)">新增下级</el-button>
-          <el-button type="text" @click="editDialogVisible = true">编辑</el-button>
-          <el-button type="text" @click="deleteNextLevel">删除</el-button>
-        </template>
-      </tree-table>
+<!--        <template slot="level" slot-scope="scope">-->
+<!--          <el-tag v-if="scope.row.level === 0">一级</el-tag>-->
+<!--          <el-tag v-else-if="scope.row.level === 1">二级</el-tag>-->
+<!--          <el-tag v-else>三级</el-tag>-->
+<!--        </template>-->
+<!--        <template slot="opt" slot-scope="scope">-->
+<!--          <el-button type="text" @click="newLevel(scope.row.id)">新增下级</el-button>-->
+<!--          <el-button type="text" @click="editDialogVisible = true">编辑</el-button>-->
+<!--          <el-button type="text" @click="deleteNextLevel">删除</el-button>-->
+<!--        </template>-->
+<!--      </tree-table>-->
+
+
+      <el-table
+        :data="categoriesList"
+        style="width: 100%"
+        row-key="id"
+        default-expand-all
+        border
+        lazy
+        :tree-props="{children: 'children'}">
+        <el-table-column prop="name" label="类目名称"></el-table-column>
+        <el-table-column prop="level" label="级别">
+          <template slot-scope="scope">
+            <el-tag v-if="scope.row.level === 0">一级</el-tag>
+            <el-tag v-else-if="scope.row.level === 1">二级</el-tag>
+            <el-tag v-else>三级</el-tag>
+          </template>
+        </el-table-column>
+        <el-table-column prop="num" label="商品数量"></el-table-column>
+        <el-table-column label="操作">
+          <template slot-scope="scope">
+            <el-button type="text" @click="newLevel(scope.row.id)">新增下级</el-button>
+            <el-button type="text" @click="editDialogVisible = true">编辑</el-button>
+            <el-button type="text" @click="deleteNextLevel">删除</el-button>
+          </template>
+        </el-table-column>
+      </el-table>
     </el-card>
 
     <!--新增等级对话框-->
@@ -67,26 +94,26 @@ export default {
   data() {
     return {
       categoriesList,
-      columns: [
-        {
-          label: '类目名称',
-          prop: 'name'
-        },
-        {
-          label: '级别',
-          type: 'template', //表示将当前 列 定义为模板列
-          template: 'level' //表示当前这一列使用的 模板名称
-        },
-        {
-          label: '商品数量',
-          prop: 'num'
-        },
-        {
-          label: '操作',
-          type: 'template',
-          template: 'opt'
-        },
-      ],
+      // columns: [
+      //   {
+      //     label: '类目名称',
+      //     prop: 'name'
+      //   },
+      //   {
+      //     label: '级别',
+      //     type: 'template', //表示将当前 列 定义为模板列
+      //     template: 'level' //表示当前这一列使用的 模板名称
+      //   },
+      //   {
+      //     label: '商品数量',
+      //     prop: 'num'
+      //   },
+      //   {
+      //     label: '操作',
+      //     type: 'template',
+      //     template: 'opt'
+      //   },
+      // ],
       //新增等级对话框显示与隐藏
       levelDialogVisible: false,
       levelForm: {
